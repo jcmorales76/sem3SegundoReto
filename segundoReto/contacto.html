@@ -1,106 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+            <h1>Tienda Muebles</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
     </header>
     <main>
-      <h2>Contacto</h2>
-      <form action="index.html">
-        <fieldset>
-          <legend>TUS DATOS</legend><br />
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" placeholder="Tu Nombre" required/><br />
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" placeholder="Tu Asunto" required/><br />
-          <label for="email">E-mail: </label>
-          <input type="email" id="email" placeholder="Tu email" required/><br />
-          <label for="telefono">Telefono:</label>
-          <input type="text" id="telefono" placeholder="Tu Telefono" required/><br />
-          <label for="message1">Mensaje:</label>
-          <textarea id="message1"></textarea>
-        </fieldset>
-        <br />
-        <fieldset>
-            <legend>PAIS</legend>
-          <label for="pais">Pais</label>
-          <select name="" id="pais" required>
-            <option value="">-- Seleccione --</option>
-            <option value="0">Mexico</option>
-            <option value="1">Peru</option>
-            <option value="2">Colombia</option>
-            <option value="3">Argentina</option>
-            <option value="4">España</option>
-            <option value="5">Chile</option>
-          </select>
-        </fieldset>
-        <br>
-        <fieldset>
-          <label for="">INFORMACION EXTRA</label><br />
-          <div>
-            <input type="radio" id="cliente" name="opcion" value="cliente" />
-            <label for="cliente">Cliente</label><br />
-            <input type="radio" id="proveedor" name="opcion"
-            value="proveedor">
-            <label for="proveedor">Proveedor</label>
-          <div>
-            <label for="message2">Categoria de Interes:</label>
-            <textarea id="message2"></textarea>
-          </div>
-        </fieldset>
-        <button  type="submit">Enviar Formulario</button>
-      </form>
+        <h2>Contacto</h2>
+        <form action="index.html">
+            <fieldset>
+                <legend>TUS DATOS</legend><br />
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre" required /><br />
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" placeholder="Tu Asunto" required /><br />
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu email" required /><br />
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" placeholder="Tu Telefono" required /><br />
+                <label for="message1">Mensaje:</label>
+                <textarea id="message1"></textarea>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>PAIS</legend>
+                <label for="pais">Pais</label>
+                <select name="" id="pais" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="0">Mexico</option>
+                    <option value="1">Peru</option>
+                    <option value="2">Colombia</option>
+                    <option value="3">Argentina</option>
+                    <option value="4">España</option>
+                    <option value="5">Chile</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="">INFORMACION EXTRA</label><br />
+                <div>
+                    <input type="radio" id="cliente" name="opcion" value="cliente" />
+                    <label for="cliente">Cliente</label><br />
+                    <input type="radio" id="proveedor" name="opcion" value="proveedor">
+                    <label for="proveedor">Proveedor</label>
+                    <div>
+                        <label for="message2">Categoria de Interes:</label>
+                        <input type="text" name="categoria" id="categoria" list="interes">
+                        <datalist name="" id="interes" required>
+                            <option value="Cocina"></option>
+                            <option value="Exterior"></option>
+                            <option value="Recamaras"></option>
+                            <option value="Oficina"></option>
+                            <option value="Television"></option>
+                        </datalist>
+
+
+
+                    </div>
+            </fieldset>
+            <button type="submit">Enviar Formulario</button>
+        </form>
     </main>
 
     <hr />
     <footer>
-      <section>
-        <div>
-          <h3>Categoria</h3>
-          <a href="">Cocina</a>
-          <a href="">Oficina</a>
-          <a href="">Jardin</a>
-          <a href="">Cochera</a>
-          <a href="">Dormitorio</a>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h3>Sobre Nosotros</h3>
-          <a href="">Nuestra Historia</a>
-          <a href="">Mision, Vision, Valores</a>
-          <a href="">Carreras</a>
-          <a href="">Politica de Privacidad</a>
-          <a href="">Terminos del Servicio</a>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h3>Soporte</h3>
-          <a href="">Preguntas Frecuentes</a>
-          <a href="">Ayuda en Linea</a>
-          <a href="">Confianza y Seguridad</a>
-        </div>
-      </section>
+        <section>
+            <div>
+                <h3>Categoria</h3>
+                <a href="">Cocina</a>
+                <a href="">Oficina</a>
+                <a href="">Jardin</a>
+                <a href="">Cochera</a>
+                <a href="">Dormitorio</a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <a href="">Nuestra Historia</a>
+                <a href="">Mision, Vision, Valores</a>
+                <a href="">Carreras</a>
+                <a href="">Politica de Privacidad</a>
+                <a href="">Terminos del Servicio</a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>Soporte</h3>
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Ayuda en Linea</a>
+                <a href="">Confianza y Seguridad</a>
+            </div>
+        </section>
 
-      <p>Todos los derechos Reservados. TiendaMuebles</p>
+        <p>Todos los derechos Reservados. TiendaMuebles</p>
     </footer>
-  </body>
+</body>
+
 </html>
